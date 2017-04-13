@@ -32,7 +32,8 @@ body{
     color: #677b75;
 }
 .main-info p{
-    margin-bottom: 22px;
+    height: 60px;
+    overflow: hidden;
 }
 .main-info h1{
     font-size: 27px;
@@ -66,6 +67,10 @@ body{
     margin: 0;
     margin-right: 28px;
     background-position: left center;
+}
+.contact-info li a{
+    color: #505351;
+    text-decoration: none;    
 }
 .contact-info li:nth-child(1){
     background-image: url(images/www.png);
