@@ -4,16 +4,16 @@ body{
     background-image: url(images/bg_wood.jpg);
     background-repeat: repeat;
     background-attachment: fixed;
-    font-family: Arial;
+    font-family: 'Myriad Pro';
 }
 
 #wrapper{
     width: 960px;
     height: 2000px;
-    margin: 0 auto;
+    margin:80px auto;
     position: relative;
     background-color: #fff;
-    margin-top: 80px;
+    box-shadow: 0 0 7px 5px rgba(0,0,0,.4);
 }
 
 #header{
@@ -31,6 +31,9 @@ body{
     left: 295px;
     color: #677b75;
 }
+.main-info p{
+    margin-bottom: 22px;
+}
 .main-info h1{
     font-size: 27px;
     color: #34544a;
@@ -44,4 +47,41 @@ body{
     position: absolute;
     top: 65px;
     left: 65px;
+}
+.contact-info{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #505351;
+    text-transform: lowercase;
+    font-size: 14px;
+    font-weight: 500;
+}
+.contact-info li{
+    display: inline-block;
+    margin: 0 5px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    margin: 0;
+    margin-right: 28px;
+    background-position: left center;
+}
+.contact-info li:nth-child(1){
+    background-image: url(images/www.png);
+    background-repeat: no-repeat;
+    padding-left: 45px;
+}
+
+.contact-info li:nth-child(2){
+    background-image: url(images/phone.png);
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+
+.contact-info li:nth-child(3){
+    background-image: url(images/mail.png);
+    background-repeat: no-repeat;
+    padding-left: 28px;
+    background-position: left 4px;
 }
