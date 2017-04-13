@@ -10,5 +10,20 @@ body{
     height: 2000px;
     margin: 0 auto;
     position: relative;
-    outline: 1px solid red;
+    background-color: #fff;
+    margin-top: 80px;
+}
+
+#header{
+    height: 215px;
+    background-color: #B4DED4;
+    background-image: url(images/hor-repeat.png);
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    position: relative;
+}
+#person{
+    position: absolute;
+    top: 75px;
+    left: 75px;
 }
