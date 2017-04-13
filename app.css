@@ -3,10 +3,12 @@ body{
     margin: 0;
     background-image: url(images/bg_wood.jpg);
     background-repeat: repeat;
+    background-attachment: fixed;
+    font-family: Arial;
 }
 
 #wrapper{
-    width: 860px;
+    width: 960px;
     height: 2000px;
     margin: 0 auto;
     position: relative;
@@ -22,8 +24,24 @@ body{
     background-position: center bottom;
     position: relative;
 }
-#person{
+#header .main-info{
+    width: 660px;
     position: absolute;
     top: 75px;
-    left: 75px;
+    left: 295px;
+    color: #677b75;
+}
+.main-info h1{
+    font-size: 27px;
+    color: #34544a;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.main-info h1 span{
+    color: #558273;
+}
+#person{
+    position: absolute;
+    top: 65px;
+    left: 65px;
 }
