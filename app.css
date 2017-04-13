@@ -1,0 +1,14 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url(images/bg_wood.jpg);
+    background-repeat: repeat;
+}
+
+#wrapper{
+    width: 860px;
+    height: 2000px;
+    margin: 0 auto;
+    position: relative;
+    outline: 1px solid red;
+}
