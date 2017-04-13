@@ -1,3 +1,6 @@
+*{
+    transition: all .4s ease-in-out;
+}
 body {
     padding: 0;
     margin: 0;
@@ -8,7 +11,8 @@ body {
 }
 
 #wrapper {
-    width: 960px;
+    width: 80%;
+    max-width: 960px;
     height: 2000px;
     margin: 80px auto;
     position: relative;
@@ -17,6 +21,7 @@ body {
 }
 
 #header {
+    outline: 1px solid yellow;
     height: 215px;
     background-color: #B4DED4;
     background-image: url(../images/hor-repeat.png);
@@ -24,10 +29,13 @@ body {
     background-position: center bottom;
     position: relative;
     .main-info {
-        width: 660px;
-        position: absolute;
+        outline: 1px solid red;
+        width: 70%;
+        max-width: 660px;
+        position: relative;
         top: 75px;
-        left: 295px;
+        right: 10px;
+        float: right;
         color: #677b75;
         p {
             height: 60px;

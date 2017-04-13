@@ -1,0 +1,26 @@
+@media screen and (max-width: 1200px) {
+  #header {
+    height: 150px;
+  }
+  #header .main-info {
+    top: 25px;
+  }
+  #person {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #header {
+    height: 350px;
+  }
+  #header .main-info {
+    top: 25px;
+  }
+  #person {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+  }
+}
