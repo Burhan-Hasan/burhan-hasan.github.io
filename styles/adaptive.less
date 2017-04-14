@@ -1,10 +1,6 @@
 @media screen and (max-width:1200px) {
     #header {
         height: 150px;
-        .main-info {
-            margin-left: 240px;
-            top: 35px;
-        }
     }
     #person {
         position: absolute;
@@ -12,7 +8,6 @@
         left: 25px;
     }
     .contact-info {
-        margin-left: 240px;
         li {
             margin-right: 15px;
         }
@@ -21,22 +16,20 @@
 
 @media screen and (max-width:1024px) {
     #header {
-        min-height: 350px;
+        height: auto;
+        padding: 20px 0;
         .main-info {
-            margin-top: 0px;
-            position: relative;
-            float: none;
-            width: 100%;
             left: 0;
-            right: 0;
+            width: 100%;
             text-align: center;
             max-width: none;
-            margin-left: 0;
+            position: relative;
+            bottom: 0;
         }
     }
     .contact-info {
-        margin-left: 0;
         text-align: center;
+        margin-left: 0;
         li {
             margin: 0 8px;
         }
@@ -47,23 +40,15 @@
         width: 200px;
         display: block;
         left: 0;
+        top: 0;
+        margin-bottom: 20px;
     }
 }
 
 @media screen and (max-width:680px) {
-    #header {
-        min-height: 400px;
-    }
     .contact-info {
         li {
             margin-bottom: 10px;
         }
-    }
-    #person {
-        position: relative;
-        margin: 0 auto;
-        width: 200px;
-        display: block;
-        left: 0;
     }
 }
