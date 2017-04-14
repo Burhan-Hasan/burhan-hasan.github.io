@@ -1,6 +1,7 @@
-*{
+* {
     transition: all .4s ease-in-out;
 }
+
 body {
     padding: 0;
     margin: 0;
@@ -21,7 +22,6 @@ body {
 }
 
 #header {
-    outline: 1px solid yellow;
     height: 215px;
     background-color: #B4DED4;
     background-image: url(../images/hor-repeat.png);
@@ -29,16 +29,17 @@ body {
     background-position: center bottom;
     position: relative;
     .main-info {
-        outline: 1px solid red;
         width: 70%;
         max-width: 660px;
         position: relative;
-        top: 75px;
-        right: 10px;
-        float: right;
+        top: 95px;
+        margin: 15px 0 0 280px;
         color: #677b75;
+        padding: 5px;
+        box-sizing: border-box;
         p {
-            height: 60px;
+            max-height: 35px;
+            margin: 5px 0;            
             overflow: hidden;
         }
         h1 {
@@ -46,6 +47,7 @@ body {
             color: #34544a;
             text-transform: uppercase;
             font-weight: normal;
+            margin: 5px 0;            
             span {
                 color: #558273;
             }
@@ -67,6 +69,7 @@ body {
     text-transform: lowercase;
     font-size: 14px;
     font-weight: 500;
+    margin: 15px 0 0 280px;
     li {
         display: inline-block;
         margin: 0 5px;

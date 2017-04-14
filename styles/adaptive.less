@@ -1,26 +1,68 @@
 @media screen and (max-width:1200px) {
     #header {
         height: 150px;
-         .main-info{
-             top: 25px;
-         }
+        .main-info {
+            margin-left: 240px;
+            top: 35px;
+        }
     }
     #person {
         position: absolute;
         top: 25px;
         left: 25px;
+    }
+    .contact-info {
+        margin-left: 240px;
+        li {
+            margin-right: 15px;
+        }
     }
 }
+
 @media screen and (max-width:1024px) {
     #header {
-        height: 350px;
-         .main-info{
-             top: 25px;
-         }
+        min-height: 350px;
+        .main-info {
+            margin-top: 0px;
+            position: relative;
+            float: none;
+            width: 100%;
+            left: 0;
+            right: 0;
+            text-align: center;
+            max-width: none;
+            margin-left: 0;
+        }
+    }
+    .contact-info {
+        margin-left: 0;
+        text-align: center;
+        li {
+            margin: 0 8px;
+        }
     }
     #person {
-        position: absolute;
-        top: 25px;
-        left: 25px;
+        position: relative;
+        margin: 0 auto;
+        width: 200px;
+        display: block;
+        left: 0;
+    }
+}
+@media screen and (max-width:666px) {
+    #header {
+        min-height: 400px;
+    }
+    .contact-info {
+        li {
+            margin-bottom: 10px;
+        }
+    }
+    #person {
+        position: relative;
+        margin: 0 auto;
+        width: 200px;
+        display: block;
+        left: 0;
     }
 }
