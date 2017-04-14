@@ -1,5 +1,22 @@
+@font-face {
+  font-family: Abel;
+  src: url(../fonts/Abel-Pro.otf);
+}
+@font-face {
+  font-family: AbelBold;
+  src: url(../fonts/Abel-Pro-Bold.otf);
+}
 * {
   transition: all 0.4s ease-in-out;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: #58382D;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #487466;
 }
 body {
   padding: 0;
@@ -7,7 +24,7 @@ body {
   background-image: url(../images/bg_wood.jpg);
   background-repeat: repeat;
   background-attachment: fixed;
-  font-family: 'Myriad Pro';
+  font-family: Abel;
 }
 #wrapper {
   width: 80%;
@@ -37,15 +54,17 @@ body {
   box-sizing: border-box;
 }
 #header .main-info p {
+  font-size: 18px;
   margin: 5px 0;
   overflow: hidden;
 }
 #header .main-info h1 {
-  font-size: 27px;
+  font-size: 32px;
   color: #34544a;
   text-transform: uppercase;
-  font-weight: normal;
+  font-weight: bold;
   margin: 5px 0;
+  margin-bottom: 10px;
 }
 #header .main-info h1 span {
   color: #558273;
@@ -57,7 +76,7 @@ body {
 }
 .contact-info {
   list-style: none;
-  padding: 0;
+  padding: 0 5px;
   margin: 0;
   color: #505351;
   text-transform: lowercase;
@@ -66,6 +85,7 @@ body {
   position: relative;
   margin-top: 15px;
   margin-left: 30%;
+  margin-bottom: 50px;
 }
 .contact-info li {
   display: inline-block;
@@ -96,4 +116,12 @@ body {
   background-repeat: no-repeat;
   padding-left: 28px;
   background-position: left 4px;
+}
+.col-50 {
+  float: left;
+  width: 50%;
+  outline: 1px solid red;
+  height: 1000px;
+  padding: 10px;
+  box-sizing: border-box;
 }

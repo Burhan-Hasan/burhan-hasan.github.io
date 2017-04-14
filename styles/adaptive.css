@@ -11,7 +11,7 @@
     margin-right: 15px;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1035px) {
   #header {
     height: auto;
     padding: 20px 0;
@@ -30,6 +30,7 @@
   }
   .contact-info li {
     margin: 0 8px;
+    font-weight: bold;
   }
   #person {
     position: relative;
