@@ -18,6 +18,15 @@
 ::-webkit-scrollbar-thumb {
   background-color: #487466;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
 body {
   padding: 0;
   margin: 0;
@@ -124,4 +133,15 @@ body {
   height: 1000px;
   padding: 10px;
   box-sizing: border-box;
+}
+.block {
+  outline: 1px  solid red;
+}
+.block .--caption {
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #34544a;
+}
+.block-right {
+  text-align: right;
 }
