@@ -4,12 +4,26 @@
 }
 
 @font-face {
-    font-family: AbelBold;
-    src: url(../fonts/Abel-Pro-Bold.otf);
+    font-family: Gilroy-Light;
+    src: url(../fonts/Gilroy-Light.otf);
 }
 
+@color-main-light: #B4DED4;
+@color-main-light2: #d9eee9;
+@color-main-dark: #34544a;
+@color-black-dark: #3D3D3D;
+@color-gray: #747776;
 * {
     transition: all .4s ease-in-out;
+}
+
+.clear {
+    &:after {
+        content: '';
+        position: relative;
+        display: block;
+        clear: both;
+    }
 }
 
 ::-webkit-scrollbar {
@@ -23,17 +37,25 @@
 ::-webkit-scrollbar-thumb {
     background-color: #487466;
 }
-h1,h2,h3,h4,h5,h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0;
     padding: 0;
 }
+
 body {
     padding: 0;
     margin: 0;
     background-image: url(../images/bg_wood.jpg);
     background-repeat: repeat;
     background-attachment: fixed;
-    font-family: Abel;
+    font-family: Abel, Gilroy-Light, sans-serif;
 }
 
 #wrapper {
@@ -48,7 +70,7 @@ body {
 
 #header {
     height: 215px;
-    background-color: #B4DED4;
+    background-color: @color-main-light;
     background-image: url(../images/hor-repeat.png);
     background-repeat: repeat-x;
     background-position: center bottom;
@@ -69,7 +91,7 @@ body {
         }
         h1 {
             font-size: 32px;
-            color: #34544a;
+            color: @color-main-dark;
             text-transform: uppercase;
             font-weight: bold;
             margin: 5px 0;
@@ -135,20 +157,127 @@ body {
 .col-50 {
     float: left;
     width: 50%;
-    outline: 1px solid red;
     height: 1000px;
     padding: 10px;
     box-sizing: border-box;
+    &:first-child {
+        padding-right: 25px;
+    }
+    &:last-child {
+        padding-left: 25px;
+    }
 }
 
 .block {
-    outline: 1px  solid red;
+    margin-bottom: 30px;
     .--caption {
         text-transform: uppercase;
         font-size: 24px;
         color: #34544a;
+        margin-bottom: 10px;
+    }
+    .--content {
+        margin: 10px 0;
+    }
+    h5 {
+        text-transform: uppercase;
+        font-size: 16px;
+        color: @color-black-dark;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        span {
+            background-color: @color-main-light2;
+            color: @color-main-dark;
+            padding: 5px 12px;
+            width: 105px;
+            display: inline-block;
+            margin-left: 5px;
+        }
+    }
+    p {
+        color: @color-gray;
+        width: 70%;
+        float: right;
     }
 }
-.block-right{
+
+.block-right {
     text-align: right;
+}
+
+.block-left {
+    text-align: left;
+    p {
+        float: left;
+    }
+}
+
+.block-table {
+    display: table;
+    .block-row {
+        display: table-row;
+    }
+    .block-cell {
+        display: table-cell;
+        vertical-align: middle;
+        text-transform: uppercase;
+        font-size: 16px;
+        padding: 5px 0;
+        letter-spacing: 1px;
+    }
+    &.block-avg {
+        width: 90%;
+        .block-cell {
+            width:100%;
+        }
+    }
+    .block-cell-center {
+        text-align: center;
+        min-width: 100px;
+        padding-right: 60px;
+        span {
+            width: 150px;
+            padding: 0!important;
+        }
+    }
+    .block-cell:first-child {
+        padding-right: 10px;
+        span {
+            background-color: @color-main-light2;
+            min-height: 25px;
+            line-height: 25px;
+            padding: 0 25px 0 5px;
+            display: inline-block;
+        }
+    }
+}
+
+.trackbar-dotted {
+    margin: 0;
+    padding: 0;
+    li {
+        width: 20px;
+        height: 25px;
+        display: block;
+        float: left;
+        margin: 2px;
+        background-color: @color-main-light2;
+        &[active] {
+            background-color: #84cdb7;
+        }
+    }
+}
+
+.trackbar {
+    height: 25px;
+    background-color: @color-main-light2;
+    position: relative;
+    >div {
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #84cdb7;
+    }
 }

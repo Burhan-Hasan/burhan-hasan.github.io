@@ -3,11 +3,17 @@
   src: url(../fonts/Abel-Pro.otf);
 }
 @font-face {
-  font-family: AbelBold;
-  src: url(../fonts/Abel-Pro-Bold.otf);
+  font-family: Gilroy-Light;
+  src: url(../fonts/Gilroy-Light.otf);
 }
 * {
   transition: all 0.4s ease-in-out;
+}
+.clear:after {
+  content: '';
+  position: relative;
+  display: block;
+  clear: both;
 }
 ::-webkit-scrollbar {
   width: 8px;
@@ -23,7 +29,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin: 0;
   padding: 0;
 }
@@ -33,7 +40,7 @@ body {
   background-image: url(../images/bg_wood.jpg);
   background-repeat: repeat;
   background-attachment: fixed;
-  font-family: Abel;
+  font-family: Abel, Gilroy-Light, sans-serif;
 }
 #wrapper {
   width: 80%;
@@ -129,19 +136,121 @@ body {
 .col-50 {
   float: left;
   width: 50%;
-  outline: 1px solid red;
   height: 1000px;
   padding: 10px;
   box-sizing: border-box;
 }
+.col-50:first-child {
+  padding-right: 25px;
+}
+.col-50:last-child {
+  padding-left: 25px;
+}
 .block {
-  outline: 1px  solid red;
+  margin-bottom: 30px;
 }
 .block .--caption {
   text-transform: uppercase;
   font-size: 24px;
   color: #34544a;
+  margin-bottom: 10px;
+}
+.block .--content {
+  margin: 10px 0;
+}
+.block h5 {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #3D3D3D;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.block h5 span {
+  background-color: #d9eee9;
+  color: #34544a;
+  padding: 5px 12px;
+  width: 105px;
+  display: inline-block;
+  margin-left: 5px;
+}
+.block p {
+  color: #747776;
+  width: 70%;
+  float: right;
 }
 .block-right {
   text-align: right;
+}
+.block-left {
+  text-align: left;
+}
+.block-left p {
+  float: left;
+}
+.block-table {
+  display: table;
+}
+.block-table .block-row {
+  display: table-row;
+}
+.block-table .block-cell {
+  display: table-cell;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 5px 0;
+  letter-spacing: 1px;
+}
+.block-table.block-avg {
+  width: 90%;
+}
+.block-table.block-avg .block-cell {
+  width: 100%;
+}
+.block-table .block-cell-center {
+  text-align: center;
+  min-width: 100px;
+  padding-right: 60px;
+}
+.block-table .block-cell-center span {
+  width: 150px;
+  padding: 0!important;
+}
+.block-table .block-cell:first-child {
+  padding-right: 10px;
+}
+.block-table .block-cell:first-child span {
+  background-color: #d9eee9;
+  min-height: 25px;
+  line-height: 25px;
+  padding: 0 25px 0 5px;
+  display: inline-block;
+}
+.trackbar-dotted {
+  margin: 0;
+  padding: 0;
+}
+.trackbar-dotted li {
+  width: 20px;
+  height: 25px;
+  display: block;
+  float: left;
+  margin: 2px;
+  background-color: #d9eee9;
+}
+.trackbar-dotted li[active] {
+  background-color: #84cdb7;
+}
+.trackbar {
+  height: 25px;
+  background-color: #d9eee9;
+  position: relative;
+}
+.trackbar > div {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #84cdb7;
 }
