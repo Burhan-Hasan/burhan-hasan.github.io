@@ -227,9 +227,6 @@ body {
     }
     &.block-avg {
         width: 90%;
-        .block-cell {
-            width:100%;
-        }
     }
     .block-cell-center {
         text-align: center;
@@ -238,6 +235,10 @@ body {
         span {
             width: 150px;
             padding: 0!important;
+        }
+        &+ {
+            width: 1px;
+            white-space: nowrap;
         }
     }
     .block-cell:first-child {

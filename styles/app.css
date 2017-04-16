@@ -204,13 +204,12 @@ body {
 .block-table.block-avg {
   width: 90%;
 }
-.block-table.block-avg .block-cell {
-  width: 100%;
-}
 .block-table .block-cell-center {
   text-align: center;
   min-width: 100px;
   padding-right: 60px;
+  width: 1px;
+  white-space: nowrap;
 }
 .block-table .block-cell-center span {
   width: 150px;
