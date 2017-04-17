@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'TerraSans';
-  src: url('../fonts/TerraSans-Medium.otf') format('opentype'), url('../fonts/TerraSans-Medium.ttf') format('truetype');
+  font-family: 'MainFont';
+  src: url('../fonts/9843.otf') format('opentype');
 }
 * {
   transition: all 0.4s ease-in-out;
@@ -37,7 +37,7 @@ body {
   background-image: url(../images/bg_wood.jpg);
   background-repeat: repeat;
   background-attachment: fixed;
-  font-family: TerraSans, sans-serif;
+  font-family: MainFont, sans-serif;
   line-height: 1.3em;
   color: #3D3D3D;
 }
@@ -68,12 +68,12 @@ body {
   box-sizing: border-box;
 }
 #header .main-info p {
-  font-size: 18px;
+  font-size: 16px;
   margin: 5px 0;
   overflow: hidden;
 }
 #header .main-info h1 {
-  font-size: 32px;
+  font-size: 30px;
   color: #34544a;
   text-transform: uppercase;
   font-weight: bold;
