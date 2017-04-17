@@ -153,15 +153,15 @@ body {
 
 // RESPONSIVE
 .col-50 {
-    float: left;
+    float: right;
     width: 50%;
     padding: 10px;
     box-sizing: border-box;
     &:first-child {
-        padding-right: 25px;
+        padding-left: 25px;
     }
     &:last-child {
-        padding-left: 25px;
+        padding-right: 25px;
     }
 }
 
@@ -221,7 +221,8 @@ body {
         padding: 5px 0;
     }
     &.block-avg {
-        width: 90%;
+       max-width: 300px;
+       width: 80%;
     }
     .block-cell-center {
         text-align: center;

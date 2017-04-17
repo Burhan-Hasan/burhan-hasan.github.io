@@ -132,16 +132,16 @@ body {
   background-position: left 4px;
 }
 .col-50 {
-  float: left;
+  float: right;
   width: 50%;
   padding: 10px;
   box-sizing: border-box;
 }
 .col-50:first-child {
-  padding-right: 25px;
+  padding-left: 25px;
 }
 .col-50:last-child {
-  padding-left: 25px;
+  padding-right: 25px;
 }
 .block {
   margin-bottom: 30px;
@@ -197,7 +197,8 @@ body {
   padding: 5px 0;
 }
 .block-table.block-avg {
-  width: 90%;
+  max-width: 300px;
+  width: 80%;
 }
 .block-table .block-cell-center {
   text-align: center;
