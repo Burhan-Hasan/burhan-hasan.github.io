@@ -68,38 +68,6 @@ artifacts/
 *.pidb
 *.svclog
 *.scc
-#=== CUSTOM ===
-
-#=====SCRIPTS=====
-Aquavita/node_modules/
-
-**/Dev/Scripts/*.js
-**/Dev/Scripts/*.js.map
-
-**/Dev/Scripts/**/*.js
-**/Dev/Scripts/**/*.js.map
-
-**/Dev/Scripts/**/**/*.js
-**/Dev/Scripts/**/**/*.js.map
-
-**/Build/Scripts/app.libs.min.js
-**/Build/Scripts/app.min.js
-**/Build/Scripts/login.min.js
-
-!Aquavita/Dev/Scripts/JS/*.js
-!Aquavita/Dev/Scripts/Libs/*.js
-!Aquavita/Dev/Scripts/Libs/*.min.js
-
-#=====STYLES=====
-**/Files/**/*
-**/Dev/Styles/**/*.css
-
-**/Build/Styles/app.libs.min.css
-**/Build/Styles/app.min.css
-**/Build/Styles/login.min.css
-
-
-
 # Chutzpah Test files
 _Chutzpah*
 
