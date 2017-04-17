@@ -9,6 +9,7 @@ var tsProject = ts.createProject({
 
 gulp.task('scripts', ['typescript'], function () {
     return gulp.src([
+        'scripts/data.js',
         'scripts/**/*.js'
     ])
         .pipe(jsConcat('app.min.js'))
