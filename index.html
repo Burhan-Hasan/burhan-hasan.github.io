@@ -28,45 +28,7 @@
         </ul>
         <main class="clear">
             <div class="col-50">
-                <div class="block block-left">
-                    <h4 class="--caption">Навыки</h4>
-                    <div class="block-table">
-                        <div class="block-row">
-                            <div class="block-cell">
-                                <span>C#</span>
-                            </div>
-                            <div class="block-cell">
-                                <ul class="trackbar-dotted clear">
-                                    <li active></li>
-                                    <li active></li>
-                                    <li active></li>
-                                    <li active></li>
-                                    <li active></li>
-                                    <li active></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="block-row">
-                            <div class="block-cell">
-                                <span>ASP.NET</span>
-                            </div>
-                            <div class="block-cell">
-                                <ul class="trackbar-dotted clear">
-                                    <li active></li>
-                                    <li active></li>
-                                    <li active></li>
-                                    <li active></li>
-                                    <li active></li>
-                                    <li active></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
                 <div class="block block-left">
                     <h4 class="--caption">Языки</h4>
                     <div class="block-table block-avg">
@@ -74,6 +36,42 @@
                             <div class="block-cell block-cell-center">
                                 <span>
                                   Русский
+                                </span>
+                            </div>
+                            <div class="block-cell">
+                                <div class="trackbar">
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-row">
+                            <div class="block-cell block-cell-center">
+                                <span>
+                                  Английский
+                                </span>
+                            </div>
+                            <div class="block-cell">
+                                <div class="trackbar">
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-row">
+                            <div class="block-cell block-cell-center">
+                                <span>
+                                  Турецкий
+                                </span>
+                            </div>
+                            <div class="block-cell">
+                                <div class="trackbar">
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-row">
+                            <div class="block-cell block-cell-center">
+                                <span>
+                                  Азербайджанский
                                 </span>
                             </div>
                             <div class="block-cell">
@@ -131,7 +129,7 @@
             </div>
         </main>
     </div>
-    <template id="skills">
+    <script type="text/handlebars" id="skills">
         <div class="block block-left">
             <h4 class="--caption">Навыки</h4>
             <div class="block-table">
@@ -142,14 +140,14 @@
                     </div>
                     <div class="block-cell">
                         <ul class="trackbar-dotted clear">
-                            <li active>{{value}}</li>
-                            <li active></li>
-                            <li active></li>
-                            <li active></li>
-                            <li active></li>
-                            <li active></li>
-                            <li></li>
-                            <li></li>
+                            <li {{isActive value 1}}></li>
+                            <li {{isActive value 2}}></li>
+                            <li {{isActive value 3}}></li>
+                            <li {{isActive value 4}}></li>
+                            <li {{isActive value 5}}></li>
+                            <li {{isActive value 6}}></li>
+                            <li {{isActive value 7}}></li>
+                            <li {{isActive value 8}}></li>
                         </ul>
                     </div>
                 </div>
@@ -157,8 +155,8 @@
 
             </div>
         </div>
-    </template>
-    <script src="mustache.min.js"></script>
+    </script>
+    <script src="handlebars.min.js"></script>
     <script src="Build/Scripts/app.min.js"></script>
 </body>
 

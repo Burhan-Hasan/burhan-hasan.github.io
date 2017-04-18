@@ -1,4 +1,4 @@
-window['data']={
+ {
     "skills": [
         {
             "name": "C#",
@@ -20,9 +20,9 @@ window['data']={
             "name": "C#",
             "value": 5
         },
-         {
+        {
             "name": "ASP.NET",
             "value": 3
         }
     ]
-};
+}
