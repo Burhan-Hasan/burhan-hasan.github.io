@@ -74,19 +74,61 @@
             "title": "Образование",
             "values": [
                 {
-                    "caption":"АГУНП",
-                    "years":"2010-2014",
-                    "text":"«Компьютерные науки» Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus est ab accusamus impedit aut aliquam"
+                    "caption": "АГУНП",
+                    "years": "2010-2014",
+                    "text": "«Компьютерные науки» Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus est ab accusamus impedit aut aliquam"
                 }
             ]
         },
         "eng": {
             "title": "Study",
             "values": [
-                 {
-                    "caption":"ASOIU",
-                    "years":"2010-2014",
-                    "text":"«Компьютерные науки» Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus est ab accusamus impedit aut aliquam"
+                {
+                    "caption": "ASOIU",
+                    "years": "2010-2014",
+                    "text": "«Компьютерные науки» Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus est ab accusamus impedit aut aliquam"
+                }
+            ]
+        }
+    },
+    "work": {
+        "ru": {
+            "title": "Опыт работы",
+            "values": [
+                {
+                    "caption": "Aquavita",
+                    "years": "2016 - 2017",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore quod cum deserunt, iste rem cupiditate modi sint molestias"
+                },
+                {
+                    "caption": "iAge",
+                    "years": "2015",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore quod cum deserunt, iste rem cupiditate modi sint molestias"
+                },
+                {
+                    "caption": "Yarpaq",
+                    "years": "2014",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore quod cum deserunt, iste rem cupiditate modi sint molestias"
+                }
+            ]
+        },
+        "eng": {
+            "title": "Work experience",
+            "values": [
+                {
+                    "caption": "Aquavita",
+                    "years": "2016 - 2017",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore quod cum deserunt, iste rem cupiditate modi sint molestias"
+                },
+                {
+                    "caption": "iAge",
+                    "years": "2015",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore quod cum deserunt, iste rem cupiditate modi sint molestias"
+                },
+                {
+                    "caption": "Yarpaq",
+                    "years": "2014",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore quod cum deserunt, iste rem cupiditate modi sint molestias"
                 }
             ]
         }

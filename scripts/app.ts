@@ -36,6 +36,6 @@ function GenerateHTML() {
     containers[0].insertAdjacentHTML('afterBegin', langs(_data["langs"]["ru"]));
     containers[0].insertAdjacentHTML('afterBegin', skills(_data));
 
-    containers[1].insertAdjacentHTML('afterBegin', studyAndWork(_data["study"]["ru"]));
     containers[1].insertAdjacentHTML('afterBegin', studyAndWork(_data["work"]["ru"]));
+    containers[1].insertAdjacentHTML('afterBegin', studyAndWork(_data["study"]["ru"]));
 }
