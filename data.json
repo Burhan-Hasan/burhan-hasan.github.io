@@ -17,12 +17,60 @@
             "value": 3
         },
         {
-            "name": "C#",
+            "name": "ASP.NET WEB API",
             "value": 5
         },
         {
-            "name": "ASP.NET",
-            "value": 3
+            "name": "Entity Framework",
+            "value": 5
+        },
+        {
+            "name": "ADO.NET",
+            "value": 8
+        },
+        {
+            "name": "T-SQL",
+            "value": 7
+        },
+        {
+            "name": "Linq",
+            "value": 7
+        },
+        {
+            "name": "HTML5",
+            "value": 8
+        },
+        {
+            "name": "CSS3 (LESS)",
+            "value": 8
+        },
+        {
+            "name": "JavaScript",
+            "value": 7
+        },
+        {
+            "name": "TypeScript",
+            "value": 8
+        },
+        {
+            "name": "JQuery",
+            "value": 9
+        },
+        {
+            "name": "AJAX",
+            "value": 9
+        },
+        {
+            "name": "Angular JS 2^",
+            "value": 2
+        },
+        {
+            "name": "React",
+            "value": 1
+        },
+        {
+            "name": "Meteor JS",
+            "value": 1
         }
     ],
     "langs": {
