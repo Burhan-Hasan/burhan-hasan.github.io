@@ -18,11 +18,12 @@ lngs.addEventListener('click', function (e: any) {
     sibling.className = '';
     e.stopPropagation();
     current.className = 'active';
-    window.history.pushState(null, "Title", "#"+current.textContent.trim());
+    window.history.pushState(null, "Title", "#"+current.textContent.trim().toLowerCase());
 });
 
 var skills = Handlebars.compile(document.getElementById('skills').innerHTML);
 var langs = Handlebars.compile(document.getElementById('langs').innerHTML);
+var studyAndWork = Handlebars.compile(document.getElementById('study-and-work').innerHTML);
 
 Handlebars.registerHelper('isActive', function (value, index) {
     return index <= value ? 'active' : '';
@@ -34,4 +35,7 @@ Handlebars.registerHelper('getTrackbarPercentStyle', function (value) {
 function GenerateHTML() {
     containers[0].insertAdjacentHTML('afterBegin', langs(_data["langs"]["ru"]));
     containers[0].insertAdjacentHTML('afterBegin', skills(_data));
+
+    containers[1].insertAdjacentHTML('afterBegin', studyAndWork(_data["study"]["ru"]));
+    containers[1].insertAdjacentHTML('afterBegin', studyAndWork(_data["work"]["ru"]));
 }

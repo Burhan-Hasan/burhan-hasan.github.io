@@ -68,5 +68,27 @@
                 }
             ]
         }
+    },
+    "study": {
+        "ru": {
+            "title": "Образование",
+            "values": [
+                {
+                    "caption":"АГУНП",
+                    "years":"2010-2014",
+                    "text":"«Компьютерные науки» Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus est ab accusamus impedit aut aliquam"
+                }
+            ]
+        },
+        "eng": {
+            "title": "Study",
+            "values": [
+                 {
+                    "caption":"ASOIU",
+                    "years":"2010-2014",
+                    "text":"«Компьютерные науки» Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus est ab accusamus impedit aut aliquam"
+                }
+            ]
+        }
     }
 }

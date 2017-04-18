@@ -11,7 +11,7 @@
     <div id="wrapper">
         <div id="header">
             <ul id="lngs">
-                <li class="active">Rus</li>
+                <li class="active">Ru</li>
                 <li>En</li>
             </ul>
             <img src="images/burhan.png" alt="Burhan Hasan Web Developer" id="person">
@@ -33,18 +33,6 @@
         <main class="clear">
             <div class="col-50"></div>
             <div class="col-50">
-                <div class="block block-right">
-                    <h4 class="--caption">Образование</h4>
-                    <div class="--content clear">
-                        <h5>
-                            АГУНП
-                            <span class="label">2010-2014</span>
-                        </h5>
-                        <p>
-                            «Компьютерные науки» Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus est ab accusamus impedit aut aliquam
-                        </p>
-                    </div>
-                </div>
                 <div class="block block-right">
                     <h4 class="--caption">Опыт работы</h4>
                     <div class="--content clear">
@@ -123,6 +111,22 @@
                 </div>
                 {{/values}}
             </div>
+        </div>
+    </script>
+    <script type="text/handlebars" id="study-and-work">
+        <div class="block block-right">
+            <h4 class="--caption">{{title}}</h4>
+            {{#values}}
+            <div class="--content clear">
+                <h5>
+                    {{caption}}
+                    <span class="label">{{years}}</span>
+                </h5>
+                <p>
+                    {{text}}
+                </p>
+            </div>
+            {{/values}}
         </div>
     </script>
     <script src="handlebars.min.js"></script>

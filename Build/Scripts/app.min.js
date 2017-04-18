@@ -17,10 +17,11 @@ lngs.addEventListener('click', function (e) {
     sibling.className = '';
     e.stopPropagation();
     current.className = 'active';
-    window.history.pushState(null, "Title", "#" + current.textContent.trim());
+    window.history.pushState(null, "Title", "#" + current.textContent.trim().toLowerCase());
 });
 var skills = Handlebars.compile(document.getElementById('skills').innerHTML);
 var langs = Handlebars.compile(document.getElementById('langs').innerHTML);
+var study = Handlebars.compile(document.getElementById('study').innerHTML);
 Handlebars.registerHelper('isActive', function (value, index) {
     return index <= value ? 'active' : '';
 });
@@ -28,7 +29,7 @@ Handlebars.registerHelper('getTrackbarPercentStyle', function (value) {
     return 'width:' + value + '%';
 });
 function GenerateHTML() {
-    //SKILLS
     containers[0].insertAdjacentHTML('afterBegin', langs(_data["langs"]["ru"]));
     containers[0].insertAdjacentHTML('afterBegin', skills(_data));
+    containers[1].insertAdjacentHTML('afterBegin', study(_data["study"]["ru"]));
 }
