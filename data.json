@@ -77,6 +77,11 @@
                 "name": "Meteor JS",
                 "value": 1
             }
+            ,
+            {
+                "name": "Git",
+                "value": 9
+            }
         ]
     },
     "add-skills": {
@@ -86,20 +91,16 @@
         },
         "skills": [
             {
-                "name": "Git",
+                "name": "Ms Sql Server",
                 "value": 7
             },
             {
-                "name": "ASP.NET",
-                "value": 8
+                "name": "WPF",
+                "value": 4
             },
             {
-                "name": "ASP.NET MVC",
+                "name": "Responsive Dev",
                 "value": 9
-            },
-            {
-                "name": "ASP.NET CORE",
-                "value": 3
             }
         ]
     },
