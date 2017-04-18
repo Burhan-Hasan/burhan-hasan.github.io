@@ -10,6 +10,15 @@ xhr.onreadystatechange = function () {
     _data = JSON.parse(xhr.responseText);
     GenerateHTML();
 };
+var lngs = document.getElementById('lngs');
+lngs.addEventListener('click', function (e) {
+    var current = e.target.closest('li');
+    var sibling = current.nextElementSibling || current.previousElementSibling;
+    sibling.className = '';
+    e.stopPropagation();
+    current.className = 'active';
+    window.history.pushState(null, "Title", "#" + current.textContent.trim());
+});
 var skills = Handlebars.compile(document.getElementById('skills').innerHTML);
 Handlebars.registerHelper('isActive', function (value, index) {
     return index <= value ? 'active' : '';

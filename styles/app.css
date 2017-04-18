@@ -83,6 +83,29 @@ body {
 #header .main-info h1 span {
   color: #558273;
 }
+#lngs {
+  list-style: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+}
+#lngs li {
+  margin: 0;
+  padding: 0;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  float: right;
+  display: block;
+  cursor: pointer;
+  color: #3D3D3D;
+}
+#lngs li.active {
+  background-color: #84cdb7;
+  color: #fff;
+}
 #person {
   position: absolute;
   top: 65px;
