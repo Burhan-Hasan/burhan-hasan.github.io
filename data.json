@@ -2,7 +2,7 @@
     "skills": [
         {
             "name": "C#",
-            "value": 5
+            "value": 7
         },
         {
             "name": "ASP.NET",
@@ -18,15 +18,15 @@
         },
         {
             "name": "ASP.NET WEB API",
-            "value": 5
+            "value": 7
         },
         {
             "name": "Entity Framework",
-            "value": 5
+            "value": 7
         },
         {
             "name": "ADO.NET",
-            "value": 8
+            "value": 9
         },
         {
             "name": "T-SQL",
@@ -42,15 +42,15 @@
         },
         {
             "name": "CSS3 (LESS)",
-            "value": 8
+            "value": 9
         },
         {
             "name": "JavaScript",
-            "value": 7
+            "value": 9
         },
         {
             "name": "TypeScript",
-            "value": 8
+            "value": 9
         },
         {
             "name": "JQuery",
@@ -79,15 +79,15 @@
             "values": [
                 {
                     "name": "Английский",
-                    "value": 90
+                    "value": 30
                 },
                 {
                     "name": "Русский",
-                    "value": 99
+                    "value": 75
                 },
                 {
                     "name": "Турецкий",
-                    "value": 80
+                    "value": 90
                 },
                 {
                     "name": "Азербайджанский",
