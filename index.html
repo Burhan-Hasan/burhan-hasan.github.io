@@ -31,61 +31,7 @@
             <li><i></i> burhan.hasan.dev@gmail.com</li>
         </ul>
         <main class="clear">
-            <div class="col-50">
-                <div class="block block-left">
-                    <h4 class="--caption">Языки</h4>
-                    <div class="block-table block-avg">
-                        <div class="block-row">
-                            <div class="block-cell block-cell-center">
-                                <span>
-                                  Русский
-                                </span>
-                            </div>
-                            <div class="block-cell">
-                                <div class="trackbar">
-                                    <div></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="block-row">
-                            <div class="block-cell block-cell-center">
-                                <span>
-                                  Английский
-                                </span>
-                            </div>
-                            <div class="block-cell">
-                                <div class="trackbar">
-                                    <div></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="block-row">
-                            <div class="block-cell block-cell-center">
-                                <span>
-                                  Турецкий
-                                </span>
-                            </div>
-                            <div class="block-cell">
-                                <div class="trackbar">
-                                    <div></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="block-row">
-                            <div class="block-cell block-cell-center">
-                                <span>
-                                  Азербайджанский
-                                </span>
-                            </div>
-                            <div class="block-cell">
-                                <div class="trackbar">
-                                    <div></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="col-50"></div>
             <div class="col-50">
                 <div class="block block-right">
                     <h4 class="--caption">Образование</h4>
@@ -157,6 +103,25 @@
                     </div>
                 </div>
                 {{/skills}}
+            </div>
+        </div>
+    </script>
+    <script type="text/handlebars" id="langs">
+        <div class="block block-left">
+            <h4 class="--caption">{{title}}</h4>
+            <div class="block-table block-avg">
+                {{#values}}
+                <div class="block-row">
+                    <div class="block-cell block-cell-center">
+                        <span>{{name}}</span>
+                    </div>
+                    <div class="block-cell">
+                        <div class="trackbar">
+                            <div style="{{getTrackbarPercentStyle value}}"></div>
+                        </div>
+                    </div>
+                </div>
+                {{/values}}
             </div>
         </div>
     </script>

@@ -20,10 +20,15 @@ lngs.addEventListener('click', function (e) {
     window.history.pushState(null, "Title", "#" + current.textContent.trim());
 });
 var skills = Handlebars.compile(document.getElementById('skills').innerHTML);
+var langs = Handlebars.compile(document.getElementById('langs').innerHTML);
 Handlebars.registerHelper('isActive', function (value, index) {
     return index <= value ? 'active' : '';
 });
+Handlebars.registerHelper('getTrackbarPercentStyle', function (value) {
+    return 'width:' + value + '%';
+});
 function GenerateHTML() {
     //SKILLS
+    containers[0].insertAdjacentHTML('afterBegin', langs(_data["langs"]["ru"]));
     containers[0].insertAdjacentHTML('afterBegin', skills(_data));
 }

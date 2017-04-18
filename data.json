@@ -1,4 +1,4 @@
- {
+{
     "skills": [
         {
             "name": "C#",
@@ -24,5 +24,49 @@
             "name": "ASP.NET",
             "value": 3
         }
-    ]
+    ],
+    "langs": {
+        "ru": {
+            "title": "Языки",
+            "values": [
+                {
+                    "name": "Английский",
+                    "value": 90
+                },
+                {
+                    "name": "Русский",
+                    "value": 99
+                },
+                {
+                    "name": "Турецкий",
+                    "value": 80
+                },
+                {
+                    "name": "Азербайджанский",
+                    "value": 100
+                }
+            ]
+        },
+        "eng": {
+            "title": "Languages",
+            "values": [
+                {
+                    "name": "English",
+                    "value": 90
+                },
+                {
+                    "name": "Russian",
+                    "value": 80
+                },
+                {
+                    "name": "Turkish",
+                    "value": 70
+                },
+                {
+                    "name": "Azerbaijanian",
+                    "value": 80
+                }
+            ]
+        }
+    }
 }
