@@ -1,78 +1,108 @@
 {
-    "skills": [
-        {
-            "name": "C#",
-            "value": 7
+    "skills": {
+        "title": {
+            "ru": "Навыки",
+            "en": "Skills"
         },
-        {
-            "name": "ASP.NET",
-            "value": 8
+        "skills": [
+            {
+                "name": "C#",
+                "value": 7
+            },
+            {
+                "name": "ASP.NET",
+                "value": 8
+            },
+            {
+                "name": "ASP.NET MVC",
+                "value": 9
+            },
+            {
+                "name": "ASP.NET CORE",
+                "value": 3
+            },
+            {
+                "name": "ASP.NET WEB API",
+                "value": 7
+            },
+            {
+                "name": "Entity Framework",
+                "value": 7
+            },
+            {
+                "name": "ADO.NET",
+                "value": 9
+            },
+            {
+                "name": "Linq",
+                "value": 7
+            },
+            {
+                "name": "T-SQL",
+                "value": 7
+            },
+            {
+                "name": "HTML5",
+                "value": 8
+            },
+            {
+                "name": "CSS3 (LESS)",
+                "value": 9
+            },
+            {
+                "name": "JavaScript",
+                "value": 9
+            },
+            {
+                "name": "TypeScript",
+                "value": 9
+            },
+            {
+                "name": "JQuery",
+                "value": 9
+            },
+            {
+                "name": "AJAX",
+                "value": 9
+            },
+            {
+                "name": "Angular JS 2^",
+                "value": 2
+            },
+            {
+                "name": "React JS",
+                "value": 1
+            },
+            {
+                "name": "Meteor JS",
+                "value": 1
+            }
+        ]
+    },
+    "add-skills": {
+        "title": {
+            "ru": "Dop Навыки",
+            "en": "Additional Skills"
         },
-        {
-            "name": "ASP.NET MVC",
-            "value": 9
-        },
-        {
-            "name": "ASP.NET CORE",
-            "value": 3
-        },
-        {
-            "name": "ASP.NET WEB API",
-            "value": 7
-        },
-        {
-            "name": "Entity Framework",
-            "value": 7
-        },
-        {
-            "name": "ADO.NET",
-            "value": 9
-        },
-        {
-            "name": "Linq",
-            "value": 7
-        },
-        {
-            "name": "T-SQL",
-            "value": 7
-        },
-        {
-            "name": "HTML5",
-            "value": 8
-        },
-        {
-            "name": "CSS3 (LESS)",
-            "value": 9
-        },
-        {
-            "name": "JavaScript",
-            "value": 9
-        },
-        {
-            "name": "TypeScript",
-            "value": 9
-        },
-        {
-            "name": "JQuery",
-            "value": 9
-        },
-        {
-            "name": "AJAX",
-            "value": 9
-        },
-        {
-            "name": "Angular JS 2^",
-            "value": 2
-        },
-        {
-            "name": "React JS",
-            "value": 1
-        },
-        {
-            "name": "Meteor JS",
-            "value": 1
-        }
-    ],
+        "skills": [
+            {
+                "name": "Git",
+                "value": 7
+            },
+            {
+                "name": "ASP.NET",
+                "value": 8
+            },
+            {
+                "name": "ASP.NET MVC",
+                "value": 9
+            },
+            {
+                "name": "ASP.NET CORE",
+                "value": 3
+            }
+        ]
+    },
     "langs": {
         "ru": {
             "title": "Языки",

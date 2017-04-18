@@ -31,10 +31,15 @@ Handlebars.registerHelper('isActive', function (value, index) {
 Handlebars.registerHelper('getTrackbarPercentStyle', function (value) {
     return 'width:'+value+'%';
 });
+var curLang="en";
+Handlebars.registerHelper('getBlockCaption', function (input) {
+    return input[curLang];
+});
 
 function GenerateHTML() {
     containers[0].insertAdjacentHTML('afterBegin', langs(_data["langs"]["ru"]));
-    containers[0].insertAdjacentHTML('afterBegin', skills(_data));
+    containers[0].insertAdjacentHTML('afterBegin', skills(_data["skills"]));
+    containers[0].insertAdjacentHTML('beforeEnd', skills(_data["add-skills"]));
 
     containers[1].insertAdjacentHTML('afterBegin', studyAndWork(_data["work"]["ru"]));
     containers[1].insertAdjacentHTML('afterBegin', studyAndWork(_data["study"]["ru"]));
