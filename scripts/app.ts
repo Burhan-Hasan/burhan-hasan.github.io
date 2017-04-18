@@ -1,5 +1,7 @@
 var containers = document.getElementsByClassName('col-50');
 var Handlebars: any;
+var curLang = "ru";
+
 
 var xhr = new XMLHttpRequest();
 xhr.open('GET', 'data.json', true);
@@ -18,7 +20,8 @@ lngs.addEventListener('click', function (e: any) {
     sibling.className = '';
     e.stopPropagation();
     current.className = 'active';
-    window.history.pushState(null, "Title", "#"+current.textContent.trim().toLowerCase());
+    curLang = current.textContent.trim().toLowerCase();
+    window.history.pushState(null, "Title", "#" + curLang);
 });
 
 var skills = Handlebars.compile(document.getElementById('skills').innerHTML);
@@ -29,9 +32,9 @@ Handlebars.registerHelper('isActive', function (value, index) {
     return index <= value ? 'active' : '';
 });
 Handlebars.registerHelper('getTrackbarPercentStyle', function (value) {
-    return 'width:'+value+'%';
+    return 'width:' + value + '%';
 });
-var curLang="en";
+
 Handlebars.registerHelper('getBlockCaption', function (input) {
     return input[curLang];
 });

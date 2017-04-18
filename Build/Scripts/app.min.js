@@ -1,5 +1,6 @@
 var containers = document.getElementsByClassName('col-50');
 var Handlebars;
+var curLang = "ru";
 var xhr = new XMLHttpRequest();
 xhr.open('GET', 'data.json', true);
 xhr.send();
@@ -17,7 +18,8 @@ lngs.addEventListener('click', function (e) {
     sibling.className = '';
     e.stopPropagation();
     current.className = 'active';
-    window.history.pushState(null, "Title", "#" + current.textContent.trim().toLowerCase());
+    curLang = current.textContent.trim().toLowerCase();
+    window.history.pushState(null, "Title", "#" + curLang);
 });
 var skills = Handlebars.compile(document.getElementById('skills').innerHTML);
 var langs = Handlebars.compile(document.getElementById('langs').innerHTML);
@@ -28,7 +30,6 @@ Handlebars.registerHelper('isActive', function (value, index) {
 Handlebars.registerHelper('getTrackbarPercentStyle', function (value) {
     return 'width:' + value + '%';
 });
-var curLang = "en";
 Handlebars.registerHelper('getBlockCaption', function (input) {
     return input[curLang];
 });
