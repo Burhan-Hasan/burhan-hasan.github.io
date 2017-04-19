@@ -15,7 +15,7 @@
                 <li>En</li>
             </ul>
             <img src="images/burhan.png" alt="Burhan Hasan Web Developer" id="person">
-            <div class="main-info">
+            <div id="main-info">
                 <h1>
                     Burhan Hasan <span>FULL STACK WEB DEVELOPER</span>
                 </h1>
@@ -97,6 +97,14 @@
             </div>
             {{/values}}
         </div>
+    </script>
+    <script type="text/handlebars" id="main-info-template">
+        <h1>
+            {{name}} <span>{{prof}}</span>
+        </h1>
+        <p>
+            {{about}}
+        </p>
     </script>
     <script src="handlebars.min.js"></script>
     <script src="Build/Scripts/app.min.js"></script>

@@ -1,7 +1,16 @@
-var containers = document.getElementsByClassName('col-50');
+
 var Handlebars: any;
 var curLang = "ru";
 
+var Containers;
+(function (Containers) {
+    var containers = document.getElementsByClassName('col-50');
+
+    Containers.MainInfo = document.getElementById('main-info')
+    Containers.RightSide = containers[0];
+    Containers.LeftSide = containers[1];
+
+})(Containers || (Containers = {}));
 
 var xhr = new XMLHttpRequest();
 xhr.open('GET', 'data.json', true);
@@ -24,6 +33,7 @@ lngs.addEventListener('click', function (e: any) {
     window.history.pushState(null, "Title", "#" + curLang);
 });
 
+var mainInfo = Handlebars.compile(document.getElementById('main-info-template').innerHTML);
 var skills = Handlebars.compile(document.getElementById('skills').innerHTML);
 var langs = Handlebars.compile(document.getElementById('langs').innerHTML);
 var studyAndWork = Handlebars.compile(document.getElementById('study-and-work').innerHTML);
@@ -40,10 +50,12 @@ Handlebars.registerHelper('getBlockCaption', function (input) {
 });
 
 function GenerateHTML() {
-    containers[0].insertAdjacentHTML('afterBegin', langs(_data["langs"]["ru"]));
-    containers[0].insertAdjacentHTML('afterBegin', skills(_data["skills"]));
-    containers[0].insertAdjacentHTML('beforeEnd', skills(_data["add-skills"]));
+    Containers.MainInfo.innerHTML = mainInfo(_data["mainInfo"][curLang]);
 
-    containers[1].insertAdjacentHTML('afterBegin', studyAndWork(_data["work"]["ru"]));
-    containers[1].insertAdjacentHTML('afterBegin', studyAndWork(_data["study"]["ru"]));
+    Containers.RightSide.insertAdjacentHTML('afterBegin', langs(_data["langs"]["ru"]));
+    Containers.RightSide.insertAdjacentHTML('afterBegin', skills(_data["skills"]));
+    Containers.RightSide.insertAdjacentHTML('beforeEnd', skills(_data["add-skills"]));
+
+    Containers.LeftSide.insertAdjacentHTML('afterBegin', studyAndWork(_data["work"]["ru"]));
+    Containers.LeftSide.insertAdjacentHTML('afterBegin', studyAndWork(_data["study"]["ru"]));
 }

@@ -57,7 +57,7 @@ body {
   background-position: center bottom;
   position: relative;
 }
-#header .main-info {
+#main-info {
   width: 70%;
   max-width: 660px;
   position: absolute;
@@ -67,12 +67,12 @@ body {
   padding: 5px;
   box-sizing: border-box;
 }
-#header .main-info p {
+#main-info p {
   font-size: 16px;
   margin: 5px 0;
   overflow: hidden;
 }
-#header .main-info h1 {
+#main-info h1 {
   font-size: 30px;
   color: #34544a;
   text-transform: uppercase;
@@ -80,7 +80,7 @@ body {
   margin: 5px 0;
   margin-bottom: 10px;
 }
-#header .main-info h1 span {
+#main-info h1 span {
   color: #558273;
 }
 #lngs {
