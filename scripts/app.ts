@@ -12,6 +12,16 @@ var Containers;
 
 })(Containers || (Containers = {}));
 
+var Templates;
+(function (Templates) {
+
+    Templates.MainInfo = Handlebars.compile(document.getElementById('main-info-template').innerHTML);
+    Templates.Skills = Handlebars.compile(document.getElementById('skills').innerHTML);
+    Templates.Langs = Handlebars.compile(document.getElementById('langs').innerHTML);
+    Templates.StudyAndWork = Handlebars.compile(document.getElementById('study-and-work').innerHTML);
+
+})(Templates || (Templates = {}));
+
 var xhr = new XMLHttpRequest();
 xhr.open('GET', 'data.json', true);
 xhr.send();
@@ -33,11 +43,6 @@ lngs.addEventListener('click', function (e: any) {
     window.history.pushState(null, "Title", "#" + curLang);
 });
 
-var mainInfo = Handlebars.compile(document.getElementById('main-info-template').innerHTML);
-var skills = Handlebars.compile(document.getElementById('skills').innerHTML);
-var langs = Handlebars.compile(document.getElementById('langs').innerHTML);
-var studyAndWork = Handlebars.compile(document.getElementById('study-and-work').innerHTML);
-
 Handlebars.registerHelper('isActive', function (value, index) {
     return index <= value ? 'active' : '';
 });
@@ -50,12 +55,12 @@ Handlebars.registerHelper('getBlockCaption', function (input) {
 });
 
 function GenerateHTML() {
-    Containers.MainInfo.innerHTML = mainInfo(_data["mainInfo"][curLang]);
+    Containers.MainInfo.innerHTML = Templates.MainInfo(_data["mainInfo"][curLang]);
 
-    Containers.RightSide.insertAdjacentHTML('afterBegin', langs(_data["langs"]["ru"]));
-    Containers.RightSide.insertAdjacentHTML('afterBegin', skills(_data["skills"]));
-    Containers.RightSide.insertAdjacentHTML('beforeEnd', skills(_data["add-skills"]));
+    Containers.RightSide.insertAdjacentHTML('afterBegin', Templates.Langs(_data["langs"]["ru"]));
+    Containers.RightSide.insertAdjacentHTML('afterBegin', Templates.Skills(_data["skills"]));
+    Containers.RightSide.insertAdjacentHTML('beforeEnd', Templates.Skills(_data["add-skills"]));
 
-    Containers.LeftSide.insertAdjacentHTML('afterBegin', studyAndWork(_data["work"]["ru"]));
-    Containers.LeftSide.insertAdjacentHTML('afterBegin', studyAndWork(_data["study"]["ru"]));
+    Containers.LeftSide.insertAdjacentHTML('afterBegin', Templates.StudyAndWork(_data["work"]["ru"]));
+    Containers.LeftSide.insertAdjacentHTML('afterBegin', Templates.StudyAndWork(_data["study"]["ru"]));
 }
