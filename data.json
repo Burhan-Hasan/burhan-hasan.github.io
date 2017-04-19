@@ -50,19 +50,15 @@
                 "value": 9
             },
             {
-                "name": "JavaScript",
+                "name": "JavaScript (TS)",
                 "value": 9
             },
             {
-                "name": "TypeScript",
-                "value": 9
+                "name": "Node JS",
+                "value": 1
             },
             {
                 "name": "JQuery",
-                "value": 9
-            },
-            {
-                "name": "AJAX",
                 "value": 9
             },
             {
@@ -76,8 +72,7 @@
             {
                 "name": "Meteor JS",
                 "value": 1
-            }
-            ,
+            },
             {
                 "name": "Git",
                 "value": 9
@@ -101,6 +96,18 @@
             {
                 "name": "Responsive Dev",
                 "value": 9
+            },
+            {
+                "name": "AJAX",
+                "value": 9
+            },
+            {
+                "name": "IIS SERVER",
+                "value": 7
+            },
+            {
+                "name": "Web Security",
+                "value": 5
             }
         ]
     },
