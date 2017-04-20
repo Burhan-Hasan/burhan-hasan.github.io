@@ -33,6 +33,7 @@ xhr.onreadystatechange = function () {
 }
 
 var lngs = document.getElementById('lngs');
+if(lngs)
 lngs.addEventListener('click', function (e: any) {
     var current = e.target.closest('li');
     var sibling = current.nextElementSibling || current.previousElementSibling;

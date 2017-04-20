@@ -25,15 +25,16 @@ xhr.onreadystatechange = function () {
     GenerateHTML();
 };
 var lngs = document.getElementById('lngs');
-lngs.addEventListener('click', function (e) {
-    var current = e.target.closest('li');
-    var sibling = current.nextElementSibling || current.previousElementSibling;
-    sibling.className = '';
-    e.stopPropagation();
-    current.className = 'active';
-    curLang = current.textContent.trim().toLowerCase();
-    window.history.pushState(null, "Title", "#" + curLang);
-});
+if (lngs)
+    lngs.addEventListener('click', function (e) {
+        var current = e.target.closest('li');
+        var sibling = current.nextElementSibling || current.previousElementSibling;
+        sibling.className = '';
+        e.stopPropagation();
+        current.className = 'active';
+        curLang = current.textContent.trim().toLowerCase();
+        window.history.pushState(null, "Title", "#" + curLang);
+    });
 Handlebars.registerHelper('isActive', function (value, index) {
     return index <= value ? 'active' : '';
 });
