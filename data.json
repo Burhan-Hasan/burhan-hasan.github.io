@@ -98,8 +98,20 @@
         },
         "skills": [
             {
+                "name": "Web Security",
+                "value": 5
+            },
+            {
                 "name": "Ms Sql Server",
                 "value": 7
+            },
+            {
+                "name": "MongoDB",
+                "value": 1
+            },
+            {
+                "name": "PostgreSQL",
+                "value": 1
             },
             {
                 "name": "WPF",
@@ -118,8 +130,12 @@
                 "value": 7
             },
             {
-                "name": "Web Security",
+                "name": "Web Sockets",
                 "value": 5
+            },
+            {
+                "name": "NUnit",
+                "value": 2
             }
         ]
     },
