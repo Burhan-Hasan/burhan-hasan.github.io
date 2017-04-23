@@ -62,7 +62,11 @@
                 "value": 9
             },
             {
-                "name": "JavaScript (TS)",
+                "name": "JavaScript (ES6)",
+                "value": 9
+            },
+            {
+                "name": "TypeScript",
                 "value": 9
             },
             {
