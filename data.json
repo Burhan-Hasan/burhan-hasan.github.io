@@ -140,6 +140,14 @@
             {
                 "name": "NUnit",
                 "value": 2
+            },
+            {
+                "name": "Gulp",
+                "value": 8
+            },
+            {
+                "name": "Webpack",
+                "value":1
             }
         ]
     },
