@@ -182,11 +182,7 @@
                 },
                 {
                     "name": "Turkish",
-                    "value": 70
-                },
-                {
-                    "name": "Azerbaijanian",
-                    "value": 80
+                    "value": 100
                 }
             ]
         }
