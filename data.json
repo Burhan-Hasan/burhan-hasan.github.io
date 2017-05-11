@@ -161,7 +161,7 @@
                 },
                 {
                     "name": "Русский",
-                    "value": 75
+                    "value": 80
                 },
                 {
                     "name": "Турецкий",
@@ -174,7 +174,7 @@
             "values": [
                 {
                     "name": "English",
-                    "value": 90
+                    "value": 30
                 },
                 {
                     "name": "Russian",
