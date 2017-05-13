@@ -102,6 +102,10 @@
         },
         "skills": [
             {
+                "name": "Linux OS",
+                "value": 4
+            },
+            {
                 "name": "Web Security",
                 "value": 5
             },
