@@ -150,8 +150,12 @@
                 "value": 5
             },
             {
-                "name": "NUnit",
-                "value": 2
+                "name": "MS-Test, NUnit",
+                "value": 4
+            },
+            {
+                "name": "TDD, DDT",
+                "value": 4
             },
             {
                 "name": "Gulp",
