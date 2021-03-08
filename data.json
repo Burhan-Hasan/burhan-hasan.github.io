@@ -93,6 +93,10 @@
                 "name": "Meteor JS",
                 "value": 1
             },
+                        {
+                "name": "Xamarin",
+                "value": 7
+            },
             {
                 "name": "Git",
                 "value": 9
