@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9f7991be.css",
-    "main.js": "/static/js/main.ecbb6c6c.js",
+    "main.js": "/static/js/main.fc4cb6c8.js",
     "static/js/787.88012170.chunk.js": "/static/js/787.88012170.chunk.js",
     "static/media/bg_wood.jpg": "/static/media/bg_wood.d842a3902fe44de9904c.jpg",
     "static/media/Arsenal-Bold.otf": "/static/media/Arsenal-Bold.2d483a91d78f6749c646.otf",
@@ -24,11 +24,11 @@
     "static/media/fontello.svg?99664442": "/static/media/fontello.c73391cb8f5244311594.svg",
     "index.html": "/index.html",
     "main.9f7991be.css.map": "/static/css/main.9f7991be.css.map",
-    "main.ecbb6c6c.js.map": "/static/js/main.ecbb6c6c.js.map",
+    "main.fc4cb6c8.js.map": "/static/js/main.fc4cb6c8.js.map",
     "787.88012170.chunk.js.map": "/static/js/787.88012170.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9f7991be.css",
-    "static/js/main.ecbb6c6c.js"
+    "static/js/main.fc4cb6c8.js"
   ]
 }
